@@ -1,7 +1,8 @@
 <template>
   <div id="app">
      <v-app>
-       <v-container fluid>
+       <ProjectContainer></ProjectContainer>
+       <!-- <v-container fluid>
          <v-layout row wrap>
            <v-flex xs6>
              <project 
@@ -11,40 +12,25 @@
            </v-flex>
            <v-flex xs6>
              <project 
-              title='Find Me a Pint'
-              description='A nifty mobile app that will find the cheapest, best or closest pub near you!'>
+              title='Book Worm'
+              description='A book-focused social network for book worms. Built on'>
             </project>
            </v-flex>
            
          </v-layout>
-           <h1>Hi I'm James,</h1>
-          
-
-          <project 
-            title='Book Worm'
-            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur tincidunt elit in commodo. Sed sollicitudin turpis 
-            ligula, id tempus ex euismod nec. In nisl lectus, bibendum nec tincidunt eget, dignissim non massa.'>
-          </project>
-
-          <project 
-            title='Circles UI Kit'
-            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur tincidunt elit in commodo. Sed sollicitudin turpis 
-            ligula, id tempus ex euismod nec. In nisl lectus, bibendum nec tincidunt eget, dignissim non massa.'>
-          </project>
-
-       </v-container>
+       </v-container> -->
 
     
       
     
    
-    
+      <v-footer>James Wright</v-footer>
        </v-app>
   </div>
 </template>
 
 <script>
-import Project from './components/project.vue'
+import ProjectContainer from './components/projectcontainer.vue'
 
 export default {
   name: 'app',
@@ -53,7 +39,7 @@ export default {
     }
   },
   components:{
-    Project,
+    ProjectContainer
   }
 
 
