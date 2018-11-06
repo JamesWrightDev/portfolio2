@@ -1,9 +1,12 @@
 <template>
     <div>
-         <h2>{{title}}</h2>
+        <v-layout>
+            <v-flex></v-flex>
+        </v-layout>
+            <h2>{{title}}</h2>
             <p>{{description}}</p> 
-            <v-btn color="#3A343B" class="white--text">Demo</v-btn>
-            <v-btn color="#2DAC8C" class="white--text">Github</v-btn>
+            <v-btn color="#2DAC8C" class="white--text">Demo</v-btn>
+            <v-btn color="#3A343B" class="white--text">Github</v-btn>
     </div> 
 
 </template>

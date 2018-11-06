@@ -1,14 +1,24 @@
 <template>
   <div id="app">
      <v-app>
-      <navigation></navigation>
-
+      <v-content>
+<navigation></navigation>
 
       <v-container fluid align-content-center='true' grid-list-xl>
+        
              <router-view></router-view>
        </v-container>
        
-        <v-footer>James Wright</v-footer>
+       
+        </v-content>
+       <v-footer class="pa-4">
+        <v-spacer></v-spacer>
+         <div>
+            
+           By James Wright
+         </div>
+         <v-spacer></v-spacer>
+       </v-footer>
        </v-app>
   </div>
 </template>
@@ -38,8 +48,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: white;
+  margin-top: 40px;
 }
 
 h1, h2 {

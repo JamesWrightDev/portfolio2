@@ -1,14 +1,24 @@
 <template>
-  <v-tabs fixed-tabs slider-color="#2DAC8C" >
-    <v-tab
-      v-for="tab in tabs"
-      :key="tab[i]"
-      :to='tab.url'
-
+<div>
+  <v-toolbar flat='true' color="white" fixed='true' scroll-off-screen
       >
-       {{ tab.name }}
-    </v-tab>
+    <v-tabs right slider-color="#2DAC8C" >
+      <v-tab
+        v-for="tab in tabs"
+        :key="tab[i]"
+        :to='tab.url'
+
+        >
+        {{ tab.name }}
+      </v-tab>
   </v-tabs>
+
+  </v-toolbar>
+    
+
+
+</div>
+
 </template>
 <script>
 export default {
