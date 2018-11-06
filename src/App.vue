@@ -2,7 +2,7 @@
   <div id="app">
      <v-app>
       
-       <v-container fluid align-content-center='true'>
+       <v-container fluid align-content-center='true' grid-list-xl>
             <ProjectContainer></ProjectContainer> 
        </v-container>
        
