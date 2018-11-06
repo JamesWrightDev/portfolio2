@@ -1,30 +1,12 @@
 <template>
   <div id="app">
      <v-app>
-       <ProjectContainer></ProjectContainer>
-       <!-- <v-container fluid>
-         <v-layout row wrap>
-           <v-flex xs6>
-             <project 
-              title='Find Me a Pint'
-              description='A nifty mobile app that will find the cheapest, best or closest pub near you!'>
-            </project>
-           </v-flex>
-           <v-flex xs6>
-             <project 
-              title='Book Worm'
-              description='A book-focused social network for book worms. Built on'>
-            </project>
-           </v-flex>
-           
-         </v-layout>
-       </v-container> -->
-
-    
       
-    
-   
-      <v-footer>James Wright</v-footer>
+       <v-container fluid align-content-center='true'>
+            <ProjectContainer></ProjectContainer> 
+       </v-container>
+       
+        <v-footer>James Wright</v-footer>
        </v-app>
   </div>
 </template>
