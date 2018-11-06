@@ -1,9 +1,11 @@
 <template>
   <div id="app">
      <v-app>
-      
-       <v-container fluid align-content-center='true' grid-list-xl>
-            <ProjectContainer></ProjectContainer> 
+      <navigation></navigation>
+
+
+      <v-container fluid align-content-center='true' grid-list-xl>
+             <router-view></router-view>
        </v-container>
        
         <v-footer>James Wright</v-footer>
@@ -13,6 +15,8 @@
 
 <script>
 import ProjectContainer from './components/projectcontainer.vue'
+import Navigation from './components/navigation.vue'
+import Skills from './components/skills.vue'
 
 export default {
   name: 'app',
@@ -21,7 +25,7 @@ export default {
     }
   },
   components:{
-    ProjectContainer
+    ProjectContainer, Navigation, Skills
   }
 
 
