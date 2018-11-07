@@ -2,23 +2,21 @@
   <div id="app">
      <v-app>
       <v-content>
-<navigation></navigation>
-
-      <v-container fluid align-content-center='true' grid-list-xl>
-        
-             <router-view></router-view>
-       </v-container>
-       
-       
+        <navigation></navigation>
+        <v-container fluid align-content-center='true' grid-list-xl>
+          <transition name='router-anim' enter-active-class='animated fadeInLeft' leave-active-class='animated fadeOutRight' >
+            <router-view></router-view>
+          </transition>
+        </v-container>       
         </v-content>
-       <v-footer class="pa-4">
+   <!--     <v-footer class="pa-4">
         <v-spacer></v-spacer>
          <div>
             
-           By James Wright
+           Built by James Wright in Vue.js
          </div>
          <v-spacer></v-spacer>
-       </v-footer>
+       </v-footer> -->
        </v-app>
   </div>
 </template>
@@ -48,7 +46,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: white;
+  background-color:   #f9f9f9;
   margin-top: 40px;
 }
 
@@ -69,4 +67,23 @@ li {
 a {
   color: #42b983;
 }
+.page{
+  position:absolute;
+  width: inherit;
+}
+.text-4{
+    font-size: 112px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.04em!important;
+    font-family: Roboto,sans-serif!important;
+    color: #2F4F4F;
+}
+@media (max-width: 700px) {
+  .text-4{
+    font-size: 50px;
+
+  }
+}
+
 </style>

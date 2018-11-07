@@ -1,13 +1,20 @@
 <template>
-    <div>
-        <v-layout>
-            <v-flex></v-flex>
-        </v-layout>
-            <h2>{{title}}</h2>
-            <p>{{description}}</p> 
-            <v-btn color="#2DAC8C" class="white--text">Demo</v-btn>
-            <v-btn color="#3A343B" class="white--text">Github</v-btn>
-    </div> 
+        <v-flex xs12 md6>
+              <v-card>
+                <v-img height="100px" >
+                </v-img>
+                <v-flex>
+                  <div>
+                    <p class="display-1 secondary--text">{{title}}</p><br>
+                    <p class='body'>{{description}}</p><br>
+                  </div>
+                </v-flex>
+                  <v-flex>
+                    <v-btn color="secondary">Demo</v-btn>
+                    <v-btn flat color="black">Github</v-btn>
+                  </v-flex>
+            </v-card>
+          </v-flex>
 
 </template>
 <script>
@@ -22,7 +29,5 @@ export default {
 }
 </script>
 <style scoped>
-.success{
-    background-color:#fad705;
-}
+
 </style>
