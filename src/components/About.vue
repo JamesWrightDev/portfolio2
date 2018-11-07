@@ -3,28 +3,33 @@
     <v-app>
       <v-content >
         <v-layout row wrap justify-end=true>
-          <v-flex md12 xs12>
+          <v-flex md12 xs12 ml-3 class='full-page'>
             <h1 class=" text-xs-left  text-4">Hey,</h1>
             <h1 class="text-xs-left  text-4">I'm James.</h1>
             <h1 class="text-xs-left text-4 font-weight-black secondary--text">I like building things.</h1>
-          </v-flex>
-          <v-flex md12 xs12 ma->
-            <v-btn outline fab color="teal">
+            <v-btn class='margin-top-large' outline fab color="secondary" href="#bio" v-smooth-scroll="{ duration: 1000, offset: -50 }">
               <v-icon>keyboard_arrow_down</v-icon>
             </v-btn>
           </v-flex>
-          <v-flex sm6 xs12>
-            <h2  class="text-md-center text-sm-center font-weight-medium secondary--text display-2 mt-2 mb-3">About</h2>
-            <v-card class='pa-5 ma-2'>
-              <p class='body'>I'm a junior front-end web developer with 3 years experience in the commercial sector, focusing on customer experience and tech development.</p>
+          </v-flex>
+          <v-flex sm6 xs12 mt-5 mb-5 class=''>
+          	<div id="bio">
+          		<h2  class="text-md-center text-sm-center font-weight-medium secondary--text display-2 mt-2 mb-3">About</h2>
+           		 <v-card class='home-card pa-3' color=primary >
+              <p class='p white--text'>I'm a junior front-end web developer with 3 years experience in the commercial sector, focusing on customer experience and tech development.</p>
+            </v-card>
+          	</div>
+            
+          </v-flex>
+          <v-flex sm6 xs12 skills mt-5 mb-5 >
+            <h2 class="text-md-center text-sm-center font-weight-medium secondary--text display-2 mt-2 mb-3">Skills</h2>
+            <v-card class='skill-card pa-3 font-weight-thin' >
+            	<ul >
+            	 <v-chip color=primary outline=true v-for='skill in skills'>{{skill}}</v-chip>
+            	</ul>
             </v-card>
           </v-flex>
-          <v-flex sm6 xs12 skills>
-            <h2 class="text-md-center text-sm-center font-weight-medium black--text display-2 mt-2 mb-3">Skills</h2>
-          </v-flex>
-        </v-layout>
-
-   
+        </v-layout>  
       </v-content>
     </v-app>
   </div>
@@ -33,19 +38,37 @@
 	export default{
 		data(){
 			return{
+				skills:['HTML','Css','Javascript','Sass','Vue.js','Jquery','Php','Laravel','Git']
 
 			}
 		}
 	}
 </script>
 <style lang="scss">
+	.p{
+		font-size: 1.6em;
+	}
+	ul li{
+		font-weight: 100;
+	}
+	.home-card{
+		width: 60%;
+		margin: 0 auto;
+	}
+	.skill-card{
+		width: 50%;
+		margin: 0 auto;
+		font-size: 1.4em;
+	}
 	.h1{
 		font-size: 10em;
 		color: red;
 	}
-	.skills{
-		
-		
+	.full-page{
+		height: 100vh;
+	}
+	.margin-top-large{
+		margin-top: 12em;
 	}
 	
 </style>

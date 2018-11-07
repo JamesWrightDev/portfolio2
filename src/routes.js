@@ -1,6 +1,6 @@
 import About from './components/about.vue'
 import ProjectContainer from './components/projectcontainer.vue'
-import Skills from './components/skills.vue'
+import Contact from './components/contact.vue'
 
 export default[
 	{
@@ -8,8 +8,8 @@ export default[
 		component: About
 	},
 	{
-		path:'/skills',
-		component: Skills
+		path:'/contact',
+		component: Contact
 	},
 	{
 		path:'/projects',

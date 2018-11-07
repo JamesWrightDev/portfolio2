@@ -1,8 +1,7 @@
 <template>
         <v-flex xs12 md6>
               <v-card>
-                <v-img height="100px" >
-                </v-img>
+                <img height='200px':src='img' alt="">
                 <v-flex>
                   <div>
                     <p class="display-1 secondary--text">{{title}}</p><br>
@@ -10,8 +9,8 @@
                   </div>
                 </v-flex>
                   <v-flex>
-                    <v-btn color="secondary">Demo</v-btn>
-                    <v-btn flat color="black">Github</v-btn>
+                    <v-btn color="secondary" :href='demoUrl'>Demo</v-btn>
+                    <v-btn flat color="black" :href='gitHub'>Github</v-btn>
                   </v-flex>
             </v-card>
           </v-flex>
@@ -24,7 +23,7 @@ export default {
 
         }
     },
-    props:['title','description','gitHub', 'img'],
+    props:['title','description','gitHub', 'img', 'demoUrl'],
     
 }
 </script>

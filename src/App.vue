@@ -3,11 +3,11 @@
      <v-app>
       <v-content>
         <navigation></navigation>
-        <v-container fluid align-content-center='true' grid-list-xl>
-          <transition name='router-anim' enter-active-class='animated fadeInLeft' leave-active-class='animated fadeOutRight' >
+        <v-container align-content-center='true' >
+          <transition name='router-anim' enter-active-class='animated slideInUp' leave-active-class='animated slideOutRight' >
             <router-view></router-view>
           </transition>
-        </v-container>       
+          </v-container>       
         </v-content>
    <!--     <v-footer class="pa-4">
         <v-spacer></v-spacer>
@@ -46,12 +46,13 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color:   #f9f9f9;
+  background-color:   #FDFDFD;
   margin-top: 40px;
 }
 
 h1, h2 {
   font-weight: normal;
+  background-color:   #FDFDFD;
 }
 
 ul {
@@ -68,8 +69,10 @@ a {
   color: #42b983;
 }
 .page{
-  position:absolute;
-  width: inherit;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  left:0
 }
 .text-4{
     font-size: 112px;

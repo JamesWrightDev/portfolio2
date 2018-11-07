@@ -4,10 +4,13 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css' 
 import VueRouter from 'vue-router'
 import Routes from './routes.js'
+import vueSmoothScroll from 'vue-smooth-scroll'
+
+Vue.use(vueSmoothScroll)
 
 Vue.use(Vuetify,{
   theme: {
-    primary: '#3f51b5',
+    primary: '#2F4F4F',
     secondary: '#2DAC8C',
     accent: '#8c9eff',
     error: '#b71c1c'
