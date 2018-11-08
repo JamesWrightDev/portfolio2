@@ -1,11 +1,11 @@
 <template>
 <div>
-  <v-toolbar flat='true' color="white" fixed='true' scroll-off-screen
+  <v-toolbar flat color="white" fixed scroll-off-screen
       >
     <v-tabs right slider-color="#2DAC8C" >
       <v-tab
         v-for="tab in tabs"
-        :key="tab[i]"
+        :key="tab.name"
         :to='tab.url'
 
         >

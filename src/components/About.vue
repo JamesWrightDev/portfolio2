@@ -25,7 +25,7 @@
             <h2 class="text-md-center text-sm-center font-weight-medium secondary--text display-2 mt-2 mb-3">Skills</h2>
             <v-card class='skill-card pa-3 font-weight-thin' >
             	<ul >
-            	 <v-chip color=primary outline=true v-for='skill in skills'>{{skill}}</v-chip>
+            	 <v-chip color=primary outline v-for='skill in skills' :key="skill.name">{{skill}}</v-chip>
             	</ul>
             </v-card>
           </v-flex>

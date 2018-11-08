@@ -25,6 +25,9 @@
 import ProjectContainer from './components/projectcontainer.vue'
 import Navigation from './components/navigation.vue'
 import Skills from './components/skills.vue'
+import Butter from 'buttercms'
+export const butter = Butter('c99a1b8e3c9cf596fb9d85b04bcb5c71a7dddcca')
+
 
 export default {
   name: 'app',
@@ -34,10 +37,19 @@ export default {
   },
   components:{
     ProjectContainer, Navigation, Skills
+  },
+  methods:{
+    init(){
+      butter.post.list({page: 1, page_size: 10}).then(function(response) {
+        console.log(response)
+       });
+       console.log('hello')
+    }
+  },
+  beforeMount(){
+    this.init()
+    }  
   }
-
-
-}
 </script>
 
 <style lang="scss">

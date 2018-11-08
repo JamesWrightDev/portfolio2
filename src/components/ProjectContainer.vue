@@ -6,6 +6,7 @@
             
             <project 
               v-for='project in projects' 
+              :key="project.title"
               :title='project.title'
               :description='project.description'
               :gitHub='project.github'
