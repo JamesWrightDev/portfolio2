@@ -4,7 +4,8 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css' 
 import VueRouter from 'vue-router'
 import Routes from './routes.js'
-import vueSmoothScroll from 'vue-smooth-scroll'
+import vueSmoothScroll from 'vue2-smooth-scroll'
+
 
 Vue.use(vueSmoothScroll)
 
@@ -21,7 +22,7 @@ Vue.use(Vuetify,{
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  scrollBehavior() {
+  scrollBehavior(to, from, savedPosition) {
     return { x: 0, y: 0 };
   },
 	routes: Routes,

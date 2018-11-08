@@ -1,11 +1,11 @@
 <template>
-        <v-flex xs12 md6>
-              <v-card>
-                <img height='200px':src='img' alt="">
+        <v-flex xs12 md4>
+              <v-card class='gradient'> 
+                <img class='mt-2'height='100px':src='img' alt="">
                 <v-flex>
                   <div>
-                    <p class="display-1 secondary--text">{{title}}</p><br>
-                    <p class='body'>{{description}}</p><br>
+                    <!-- <p class="display-1  secondary--text">{{title}}</p><br> -->
+                    <p class='text-1'>{{description}}</p><br>
                   </div>
                 </v-flex>
                   <v-flex>
@@ -27,6 +27,6 @@ export default {
     
 }
 </script>
-<style scoped>
-
+<style>
+  
 </style>

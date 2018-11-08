@@ -9,7 +9,7 @@
           </transition>
           </v-container>       
         </v-content>
-   <!--     <v-footer class="pa-4">
+       <!-- <v-footer>
         <v-spacer></v-spacer>
          <div>
             
@@ -25,9 +25,6 @@
 import ProjectContainer from './components/projectcontainer.vue'
 import Navigation from './components/navigation.vue'
 import Skills from './components/skills.vue'
-import Butter from 'buttercms'
-export const butter = Butter('c99a1b8e3c9cf596fb9d85b04bcb5c71a7dddcca')
-
 
 export default {
   name: 'app',
@@ -38,17 +35,17 @@ export default {
   components:{
     ProjectContainer, Navigation, Skills
   },
-  methods:{
-    init(){
-      butter.post.list({page: 1, page_size: 10}).then(function(response) {
-        console.log(response)
-       });
-       console.log('hello')
-    }
-  },
-  beforeMount(){
-    this.init()
-    }  
+  // methods:{
+  //   init(){
+  //     // butter.post.list({page: 1, page_size: 10}).then(function(response) {
+  //     //   console.log(response)
+  //     //  });
+  //      console.log('hello')
+  //   }
+  // },
+  // beforeMount(){
+  //   this.init()
+  //   }  
   }
 </script>
 
@@ -94,6 +91,11 @@ a {
     font-family: Roboto,sans-serif!important;
     color: #2F4F4F;
 }
+.text-1{
+    font-size: 1.3em;
+    margin: 0 10px;
+  }
+
 @media (max-width: 700px) {
   .text-4{
     font-size: 50px;

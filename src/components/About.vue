@@ -1,5 +1,5 @@
 <template>
-  <div class='page'>
+  <div class='page' id='page'>
     <v-app>
       <v-content >
         <v-layout row wrap justify-end=true>
@@ -7,10 +7,9 @@
             <h1 class=" text-xs-left  text-4">Hey,</h1>
             <h1 class="text-xs-left  text-4">I'm James.</h1>
             <h1 class="text-xs-left text-4 font-weight-black secondary--text">I like building things.</h1>
-            <v-btn class='margin-top-large' outline fab color="secondary" href="#bio" v-smooth-scroll="{ duration: 1000, offset: -50 }">
+            <v-btn class='margin-top-large' outline fab color="secondary" href='#bio'>
               <v-icon>keyboard_arrow_down</v-icon>
             </v-btn>
-          </v-flex>
           </v-flex>
           <v-flex sm6 xs12 mt-5 mb-5 class=''>
           	<div id="bio">
@@ -45,6 +44,9 @@
 	}
 </script>
 <style lang="scss">
+	html {
+		scroll-behavior: smooth;
+	}
 	.p{
 		font-size: 1.6em;
 	}
