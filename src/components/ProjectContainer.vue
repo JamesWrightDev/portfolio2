@@ -42,24 +42,15 @@ export default {
                 },
                 {
                 title: 'Book Worm', 
-                description: 'A micro ui framework designed and built for rapid prototyping, built using SASS', github:'https://github.com/JamesWrightDev/findmeapint2', 
-                url:'https://evening-cove-60863.herokuapp.com/', img:'https://res.cloudinary.com/dnwvgr424/image/upload/v1541630428/findmeapint.png'
+                description: "Bookworm is a book review platform developed in Php, Laravel and Javascript. It's still in beta right now, but give it a try!", github:'https://github.com/JamesWrightDev/findmeapint2', 
+                url:'https://sheltered-coast-26478.herokuapp.com/', img:'https://res.cloudinary.com/dnwvgr424/image/upload/v1541630428/findmeapint.png'
                 },
                 {
                 title: 'Circles UI Kit', 
                 description: 'A micro ui framework designed and built for rapid prototyping, built using SASS', github:'https://github.com/JamesWrightDev/findmeapint2', 
                 url:'https://evening-cove-60863.herokuapp.com/', img:'https://res.cloudinary.com/dnwvgr424/image/upload/v1541687724/logo.png'
                 },
-                {
-                title: 'Circles UI Kit', 
-                description: 'A micro ui framework designed and built for rapid prototyping, built using SASS', github:'https://github.com/JamesWrightDev/findmeapint2', 
-                url:'https://evening-cove-60863.herokuapp.com/', img:'https://res.cloudinary.com/dnwvgr424/image/upload/v1541687724/logo.png'
-                },
-                {
-                title: 'Circles UI Kit', 
-                description: 'A micro ui framework designed and built for rapid prototyping, built using SASS', github:'https://github.com/JamesWrightDev/findmeapint2', 
-                url:'https://evening-cove-60863.herokuapp.com/', img:'https://res.cloudinary.com/dnwvgr424/image/upload/v1541687724/logo.png'
-                },
+                
 
 
 
