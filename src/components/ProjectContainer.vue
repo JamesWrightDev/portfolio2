@@ -28,8 +28,6 @@
 </template>
 <script>
 import Project from './project.vue'
-import Butter from 'buttercms'
-export const butter = Butter('c99a1b8e3c9cf596fb9d85b04bcb5c71a7dddcca')
 
 export default {
     data(){
@@ -42,13 +40,13 @@ export default {
                 },
                 {
                 title: 'Book Worm', 
-                description: "Bookworm is a book review platform developed in Php, Laravel and Javascript. It's still in beta right now, but give it a try!", github:'https://github.com/JamesWrightDev/findmeapint2', 
-                url:'https://sheltered-coast-26478.herokuapp.com/', img:'https://res.cloudinary.com/dnwvgr424/image/upload/v1541630428/findmeapint.png'
+                description: "Bookworm is a book review platform developed in PHP, Laravel and Javascript. It's still in beta right now, but give it a try!", github:'https://github.com/JamesWrightDev/findmeapint2', 
+                url:'https://sheltered-coast-26478.herokuapp.com/', img:'https://res.cloudinary.com/dnwvgr424/image/upload/v1541789241/logo.png'
                 },
                 {
                 title: 'Circles UI Kit', 
                 description: 'A micro ui framework designed and built for rapid prototyping, built using SASS', github:'https://github.com/JamesWrightDev/findmeapint2', 
-                url:'https://evening-cove-60863.herokuapp.com/', img:'https://res.cloudinary.com/dnwvgr424/image/upload/v1541687724/logo.png'
+                url:'https://jameswrightdev.github.io/Circles-UI-Framework/', img:'https://res.cloudinary.com/dnwvgr424/image/upload/v1541788782/circles.png'
                 },
                 
 

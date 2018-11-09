@@ -1,8 +1,10 @@
 <template>
   <div id="app">
+    <!-- Build 1.3 -->
+    <navigation></navigation>
      <v-app>
       <v-content>
-        <navigation></navigation>
+        
         <v-container align-content-center='true' >
           <transition name='router-anim' enter-active-class='animated slideInUp' leave-active-class='animated slideOutRight' >
             <router-view></router-view>
@@ -56,7 +58,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color:   #FDFDFD;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 h1, h2 {
@@ -91,9 +93,13 @@ a {
     font-family: Roboto,sans-serif!important;
     color: #2F4F4F;
 }
+.gradient{
+  height: 300px;
+}
 .text-1{
-    font-size: 1.3em;
+    font-size: 1em;
     margin: 0 10px;
+    color: #2F4F4F;
   }
 
 @media (max-width: 700px) {

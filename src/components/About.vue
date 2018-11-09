@@ -15,7 +15,7 @@
           	<div id="bio">
           		<h2  class="text-md-center text-sm-center font-weight-medium secondary--text display-2 mt-2 mb-3">About</h2>
            		 <v-card class='home-card pa-3' color=primary >
-              <p class='p white--text'>I'm a junior front-end web developer with 3 years experience in the commercial sector, focusing on customer experience and tech development.</p>
+              <p class='p white--text'>I'm a junior front-end web developer with 3 years experience in the commercial sector, focusing on customer experience and tech development. Currently seeking my first web devloper position.</p>
             </v-card>
           	</div>
             

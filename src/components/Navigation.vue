@@ -1,6 +1,6 @@
 <template>
 <div>
-  <v-toolbar flat color="white" fixed scroll-off-screen
+  <v-toolbar flat color="white"  scroll-off-screen
       >
     <v-tabs right slider-color="#2DAC8C" >
       <v-tab
