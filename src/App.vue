@@ -37,17 +37,6 @@ export default {
   components:{
     ProjectContainer, Navigation, Skills
   },
-  // methods:{
-  //   init(){
-  //     // butter.post.list({page: 1, page_size: 10}).then(function(response) {
-  //     //   console.log(response)
-  //     //  });
-  //      console.log('hello')
-  //   }
-  // },
-  // beforeMount(){
-  //   this.init()
-  //   }  
   }
 </script>
 
