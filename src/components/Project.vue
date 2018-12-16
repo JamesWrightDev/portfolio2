@@ -4,7 +4,6 @@
                 <img class='mt-2'height='100px':src='img' alt="">
                 <v-flex>
                   <div>
-                    <!-- <p class="display-1  secondary--text">{{title}}</p><br> -->
                     <p class='text-1'>{{description}}</p><br>
                   </div>
                 </v-flex>

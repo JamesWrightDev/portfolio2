@@ -11,14 +11,6 @@
           </transition>
           </v-container>       
         </v-content>
-       <!-- <v-footer>
-        <v-spacer></v-spacer>
-         <div>
-            
-           Built by James Wright in Vue.js
-         </div>
-         <v-spacer></v-spacer>
-       </v-footer> -->
        </v-app>
   </div>
 </template>
@@ -26,7 +18,6 @@
 <script>
 import ProjectContainer from './components/projectcontainer.vue'
 import Navigation from './components/navigation.vue'
-import Skills from './components/skills.vue'
 
 export default {
   name: 'app',
@@ -35,7 +26,7 @@ export default {
     }
   },
   components:{
-    ProjectContainer, Navigation, Skills
+    ProjectContainer, Navigation
   },
   }
 </script>
