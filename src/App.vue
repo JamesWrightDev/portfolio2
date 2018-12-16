@@ -93,7 +93,7 @@ a {
 
 @media (max-width: 700px) {
   .text-4{
-    font-size: 50px;
+    font-size: 3.9em;
 
   }
 }

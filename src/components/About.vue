@@ -54,7 +54,7 @@
 		font-weight: 100;
 	}
 	.home-card{
-		width: 60%;
+		width: 80%;
 		margin: 0 auto;
 	}
 	.skill-card{

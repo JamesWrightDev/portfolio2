@@ -40,12 +40,12 @@ export default {
                 },
                 {
                 title: 'Book Worm', 
-                description: "Bookworm is a book review platform developed in PHP, Laravel and Javascript. It's still in beta right now, but give it a try!", github:'https://github.com/JamesWrightDev/findmeapint2', 
+                description: "Bookworm is a book review platform developed in PHP, Laravel and Javascript. It's still in beta right now, but give it a try!", github:'https://github.com/JamesWrightDev/bookworm', 
                 url:'https://sheltered-coast-26478.herokuapp.com/', img:'https://res.cloudinary.com/dnwvgr424/image/upload/v1541789241/logo.png'
                 },
                 {
                 title: 'Circles UI Kit', 
-                description: 'A micro ui framework designed and built for rapid prototyping, built using SASS', github:'https://github.com/JamesWrightDev/findmeapint2', 
+                description: 'A micro ui framework designed and built for rapid prototyping, built using SASS', github:'https://github.com/JamesWrightDev/Circles-UI-Framework', 
                 url:'https://jameswrightdev.github.io/Circles-UI-Framework/', img:'https://res.cloudinary.com/dnwvgr424/image/upload/v1541788782/circles.png'
                 },
                 
@@ -61,22 +61,7 @@ export default {
     },
     components:{
         Project,
-    },
-    methods:{
-    init(){
-      butter.post.list({page: 1, page_size: 10}).then(function(response) {
-        console.log(response)
-        for(i; i<response.length; i++){
-            console.log(response[i].data)
-        }
-       });
-       console.log('hello')
     }
-  },
-    beforeMount(){
-        this.init();
-    }
-    
 }
 </script>
 <style scoped>
