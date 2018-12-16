@@ -14,5 +14,9 @@ export default[
 	{
 		path:'/projects',
 		component: ProjectContainer
+	},
+	{
+		path:'/bio',
+		component: About
 	}
 ]

@@ -18,11 +18,7 @@ Vue.use(Vuetify,{
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  // scrollBehavior(to, from, savedPosition) {
-  //   return { x: 0, y: 0 };
-  // },
 	routes: Routes,
-  
 })
 
 new Vue({

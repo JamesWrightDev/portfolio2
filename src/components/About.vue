@@ -37,7 +37,7 @@
 	export default{
 		data(){
 			return{
-				skills:['HTML','Css','Javascript','Sass','Vue.js','Jquery','Php','Laravel','Git']
+				skills:['HTML','Css','Javascript','Sass','Vue.js','Jquery','Php','Laravel','Git','G	ulp']
 
 			}
 		}
