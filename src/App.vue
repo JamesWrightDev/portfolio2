@@ -4,12 +4,12 @@
     <navigation></navigation>
      <v-app>
       <v-content>
-        
+
         <v-container align-content-center='true' >
           <transition name='router-anim' enter-active-class='animated slideInUp' leave-active-class='animated slideOutRight' >
             <router-view></router-view>
           </transition>
-          </v-container>       
+          </v-container>
         </v-content>
        </v-app>
   </div>
@@ -45,7 +45,7 @@ h1, h2 {
   font-weight: normal;
   background-color:   #FDFDFD;
 }
-
+/*  */
 ul {
   list-style-type: none;
   padding: 0;
